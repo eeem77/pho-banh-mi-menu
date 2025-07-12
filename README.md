@@ -1,6 +1,6 @@
 # Astro & Tailwind CSS Starter Kit
 
-by https://lexingtonthemes.com
+This project was originally developed by Lexington Themes and has since been modified by eeem77.
 
 ## License
 
