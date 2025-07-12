@@ -1,0 +1,183 @@
+---
+import { Image } from "astro:assets";
+import p1 from "@/images/special-pho.webp";
+import p2 from "@/images/beef-meatball-pho.webp";
+import p3 from "@/images/chicken-pho.webp";
+import p4 from "@/images/vegan-pho.webp";
+import p5 from "@/images/seafood-pho.webp";
+import p6 from "@/images/wonton-egg-noodle.webp";
+import p7 from "@/images/traditional-spring-rolls.webp";
+import p8 from "@/images/lemon-grass-beef-banh-mì.webp";
+import p9 from "@/images/vegetarian.webp";
+
+const phoProducts = [
+  {
+    url: "#_",
+    title: "1. Special Beef Phở",
+    subtitle: "[ Phở Đặc Biệt ]",
+    description:
+      "Rice noodle, steak, brisket, tendon, tripe, fatty brisket, beef meatballs, 12hrs-beef broth.",
+    price: "$20.00",
+    image: p1,
+  },
+  {
+    url: "#_",
+    title: "2. Steak AND/OR Meatball Phở",
+    subtitle: "[ Phở Tái Bò Viên ]",
+    description:
+      "Rice noodle, sliced rare steak & beef meatballs, 12hrs-beef broth.",
+    price: "$18.50",
+    image: p2,
+  },
+  {
+    url: "#_",
+    title: "3. Free-ranged Chicken Phở",
+    subtitle: "[ Phở Gà Đi Bộ ]",
+    description: "Rice noodle, boiled chicken.",
+    price: "$18.50",
+    image: p3,
+  },
+  {
+    url: "#_",
+    title: "4. Vegan Phở",
+    subtitle: "[ Phở Chay ]",
+    description:
+      "Rice noodle, tofu, broccoli, cabbage, mushroom, carrot in special veggie broth.",
+    price: "$18.50",
+    image: p4,
+  },
+  {
+    url: "#_",
+    title: "5. Seafood Phở",
+    subtitle: "[ Phở Đồ Biển ]",
+    description:
+      "Rice noodle, fish, squid, shrimp, onions & scallions in seafood broth.",
+    price: "$20.00",
+    image: p5,
+  },
+  {
+    url: "#_",
+    title: "6. Wonton Egg Noodle",
+    subtitle: "[ Mì Hoành Thánh ]",
+    description:
+      "Pork & shrimp wontons, shrimp, onions, scallions in chicken broth.",
+    price: "$18.00",
+    image: p6,
+  },
+];
+const springRollsProducts = [
+  {
+    url: "#_",
+    title: "7. Traditional Spring Rolls",
+    subtitle: "( 6 pc )",
+    description:
+      "Rice paper, lettuce salad, avocado, boiled shrimp with special dipping sauce.",
+    price: "$13.00",
+    image: p7,
+  },
+  {
+    url: "#_",
+    title: "8. Lemongrass Beef",
+    subtitle: "( 6 pc )",
+    description: "Rice paper, lettuce salad, lemongrass beef.",
+    price: "$13.00",
+    image: p8,
+  },
+  {
+    url: "#_",
+    title: "9. Vegetarian",
+    subtitle: "( 6 pc )",
+    description: "Rice paper, lettuce salad, lemongrass marinated tofu.",
+    price: "$13.00",
+    image: p9,
+  },
+];
+---
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-black rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Phở
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      phoProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-black rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Spring Rolls
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      springRollsProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
