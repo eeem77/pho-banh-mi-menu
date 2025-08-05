@@ -9,6 +9,22 @@ import p6 from "@/images/wonton-egg-noodle.webp";
 import p7 from "@/images/traditional-spring-rolls.webp";
 import p8 from "@/images/lemon-grass-beef-banh-mì.webp";
 import p9 from "@/images/vegetarian.webp";
+import p10 from "@/images/spicy-beef-noodle-pho.webp";
+import p11 from "@/images/grilled-chicken-banh-mi.webp";
+import p12 from "@/images/grilled-pork-banh-mi.webp";
+import p13 from "@/images/lemongrass-beef-banh-mi.webp";
+import p14 from "@/images/pork-belly-banh-mi.webp";
+import p15 from "@/images/vegetarian-banh-mi.webp";
+import p16 from "@/images/pate-pork-roll.webp";
+import p17 from "@/images/fish-cake-banh-mi.webp";
+import p18 from "@/images/combination-banh-mi.webp";
+import p19 from "@/images/special-combo.webp";
+import p20 from "@/images/fries.webp";
+import p21 from "@/images/eggrolls.webp";
+import p22 from "@/images/crispy-wontons.webp";
+import p23 from "@/images/honey-garlic-wings.webp";
+import p24 from "@/images/popcorn-chicken.webp";
+import p25 from "@/images/vegetarian-eggrolls.webp";
 
 const phoProducts = [
   {
@@ -64,6 +80,15 @@ const phoProducts = [
     price: "$18.00",
     image: p6,
   },
+  {
+    url: "#_",
+    title: "7. Spicy Beef Noodle Phở",
+    subtitle: "[ Bún Bò Huế ]",
+    description:
+      "Pork, beef bones, with added flavors of lemon grass, annatto and shrimp paste.",
+    price: "",
+    image: p10,
+  },
 ];
 const springRollsProducts = [
   {
@@ -90,6 +115,137 @@ const springRollsProducts = [
     description: "Rice paper, lettuce salad, lemongrass marinated tofu.",
     price: "$13.00",
     image: p9,
+  },
+];
+
+const banhMiProducts = [
+  {
+    url: "#_",
+    title: "10. Grilled Chicken Bánh Mì",
+    subtitle: "[ Gà Nướng ]",
+    description:
+      "Grilled chicken in special sauce, signature vietnamese pickle salad.",
+    price: "$11.95",
+    image: p11,
+  },
+  {
+    url: "#_",
+    title: "11. Grilled Pork Bánh Mì",
+    subtitle: "[ Heo Nướng ]",
+    description:
+      "Grilled pork in special sauce, signature vietnamese pickle salad.",
+    price: "$11.95",
+    image: p12,
+  },
+  {
+    url: "#_",
+    title: "12. Lemongrass Beef Bánh Mì",
+    subtitle: "[ Bánh Mì Bò Ướp Xả ]",
+    description:
+      "Saute lemongrass marinated beef, signature vietnamese pickle salad.",
+    price: "$11.95",
+    image: p13,
+  },
+  {
+    url: "#_",
+    title: "13. Pork Belly Bánh Mì",
+    subtitle: "[ Bánh Mì Thit Ba Chì Ram ]",
+    description: "Grill pork belly, signature vietnamese pickle salad.",
+    price: "$14.95",
+    image: p14,
+  },
+  {
+    url: "#_",
+    title: "14. Vegetarian Bánh Mì",
+    subtitle: "[ Bánh Mì Chay ]",
+    description:
+      "Lemongrass marinated tofu, signature vietnamese pickle salad.",
+    price: "$11.95",
+    image: p15,
+  },
+  {
+    url: "#_",
+    title: "15. Pate, Pork Roll",
+    subtitle: "[ Bánh Mì Pate Chả Chà Bông ]",
+    description: "Pate, pork roll, dried shredded pork.",
+    price: "$12.00",
+    image: p16,
+  },
+  {
+    url: "#_",
+    title: "16. Fish Cake Bánh Mì",
+    subtitle: "[ Bánh Mì Chả Cá ]",
+    description: "Fish cake slices.",
+    price: "$14.00",
+    image: p17,
+  },
+  {
+    url: "#_",
+    title: "17. Combination Bánh Mì",
+    subtitle: "[ Bánh Mì Thịt Nướng ]",
+    description: "Pate, fried egg, choice of meat: pork, chicken, beef.",
+    price: "$13.00",
+    image: p18,
+  },
+  {
+    url: "#_",
+    title: "18. Special Combo",
+    subtitle: "[ Bánh Mì Đặc Biệt ]",
+    description:
+      "Any banh mi. Choice of meat: pork, chicken, beef. Fries and soda or coffee (extra $1).",
+    price: "$16.00",
+    image: p19,
+  },
+];
+
+const appetizersProducts = [
+  {
+    url: "#_",
+    title: "19. Fries",
+    subtitle: "",
+    description: "",
+    price: "$9.00",
+    image: p20,
+  },
+  {
+    url: "#_",
+    title: "20. Eggrolls",
+    subtitle: "",
+    description: "",
+    price: "$9.00",
+    image: p21,
+  },
+  {
+    url: "#_",
+    title: "21. Crispy Wontons",
+    subtitle: "",
+    description: "",
+    price: "$9.00",
+    image: p22,
+  },
+  {
+    url: "#_",
+    title: "22. Honey Garlic Wings",
+    subtitle: "(5 pc)",
+    description: "",
+    price: "$10.00",
+    image: p23,
+  },
+  {
+    url: "#_",
+    title: "23. Popcorn Chicken",
+    subtitle: "",
+    description: "",
+    price: "$9.00",
+    image: p24,
+  },
+  {
+    url: "#_",
+    title: "24. Vegetarian Eggrolls",
+    subtitle: "",
+    description: "",
+    price: "$9.00",
+    image: p25,
   },
 ];
 ---
@@ -151,6 +307,94 @@ const springRollsProducts = [
   >
     {
       springRollsProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Banh Mi
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      banhMiProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Appetizers
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      appetizersProducts.map((product) => (
         <figure class="relative bg-orange-10 rounded-t-3xl">
           <a href={product.url} aria-hidden="true" class="absolute inset-0" />
           <Image
