@@ -25,6 +25,14 @@ import p22 from "@/images/crispy-wontons.webp";
 import p23 from "@/images/honey-garlic-wings.webp";
 import p24 from "@/images/popcorn-chicken.webp";
 import p25 from "@/images/vegetarian-eggrolls.webp";
+import p31 from "@/images/grilled-pork-chop-rice-plate.webp";
+import p32 from "@/images/grilled-chicken-rice-plate.webp";
+import p33 from "@/images/grilled-pork-rice-plate.webp";
+import p34 from "@/images/vegetarian-rice-plate.webp";
+import p35 from "@/images/braised-ginger-chicken-rice-plate.webp";
+import p36 from "@/images/special-vermicelli-bowl.webp";
+import p37 from "@/images/regular-vermicelli-bowl.webp";
+import p38 from "@/images/vegetarian-vermicelli-bowl.webp";
 
 const phoProducts = [
   {
@@ -90,6 +98,7 @@ const phoProducts = [
     image: p10,
   },
 ];
+
 const springRollsProducts = [
   {
     url: "#_",
@@ -248,6 +257,82 @@ const appetizersProducts = [
     image: p25,
   },
 ];
+
+const ricePlatterProducts = [
+  {
+    url: "#_",
+    title: "31. Grilled Pork Chop Rice Plate",
+    subtitle: "[ Cơm Sườn Nướng ]",
+    description:
+      "Vietnamese rice with grilled pork chop in sweet & sour marination, fried eggs, Chinese sausage and fresh vegetables or signature vietnamese pickle salad.",
+    price: "$23.00",
+    image: p31,
+  },
+  {
+    url: "#_",
+    title: "32. Grilled Chicken Rice Plate",
+    subtitle: "[ Com Gà Nướng ]",
+    description:
+      "Vietnamese rice with grilled chicken in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
+    price: "$18.00",
+    image: p32,
+  },
+  {
+    url: "#_",
+    title: "33. Grilled Pork Rice Plate",
+    subtitle: "[ Com Heo Nướng ]",
+    description:
+      "Vietnamese rice with grilled pork in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
+    price: "$18.00",
+    image: p33,
+  },
+  {
+    url: "#_",
+    title: "34. Vegetarian Rice Plate",
+    subtitle: "[ Cơm Đậu Hũ Xào Chay ]",
+    description:
+      "Vietnamese rice with stir-fried tofu with broccoli, cabbage, and carrot.",
+    price: "$18.00",
+    image: p34,
+  },
+  {
+    url: "#_",
+    title: "35. Braised Ginger Chicken Rice Plate",
+    subtitle: "[ Gà Ram Gừng ]",
+    description:
+      "Vietnamese rice with caramelized ginger chicken, fresh/boiled vegetable and or signature vietnamese pickle salad.",
+    price: "$18.00",
+    image: p35,
+  },
+];
+
+const vermicelliProducts = [
+  {
+    url: "#_",
+    title: "36. Special Vermicelli Bowl",
+    subtitle: "[ Bún Tôm Thịt Nướng Chả Giò ]",
+    description:
+      "Fried eggrolls, shrimp, and choice of meat beef, chicken or pork with vegetables.",
+    price: "$20.00",
+    image: p36,
+  },
+  {
+    url: "#_",
+    title: "37. Regular Vermicelli Bowl",
+    subtitle: "[ Bún Thịt Nướng ]",
+    description: "Choice of meat beef, chicken or pork with vegetables.",
+    price: "$19.00",
+    image: p37,
+  },
+  {
+    url: "#_",
+    title: "38. Vegetarian Vermicelli Bowl",
+    subtitle: "[ Bún Chay ]",
+    description: "Lemongrass marinated tofu with vegetables.",
+    price: "$18.00",
+    image: p38,
+  },
+];
 ---
 
 <section class="pt-4">
@@ -395,6 +480,94 @@ const appetizersProducts = [
   >
     {
       appetizersProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Rice Platter
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      ricePlatterProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Vermicelli
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      vermicelliProducts.map((product) => (
         <figure class="relative bg-orange-10 rounded-t-3xl">
           <a href={product.url} aria-hidden="true" class="absolute inset-0" />
           <Image
