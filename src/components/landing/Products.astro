@@ -25,6 +25,12 @@ import p22 from "@/images/crispy-wontons.webp";
 import p23 from "@/images/honey-garlic-wings.webp";
 import p24 from "@/images/popcorn-chicken.webp";
 import p25 from "@/images/vegetarian-eggrolls.webp";
+import p26 from "@/images/coconut-water.webp";
+import p27 from "@/images/lemon-soda.webp";
+import p28 from "@/images/iced-vietnamese-coffee.webp";
+import p29 from "@/images/golden-peach.webp";
+import p30 from "@/images/strawberry-star.webp";
+import p31 from "@/images/lychee-delight.webp";
 import p32 from "@/images/grilled-pork-chop-rice-plate.webp";
 import p33 from "@/images/grilled-chicken-rice-plate.webp";
 import p34 from "@/images/grilled-pork-rice-plate.webp";
@@ -356,6 +362,58 @@ const saladProducts = [
     image: p41,
   },
 ];
+
+const drinksProducts = [
+  {
+    url: "#_",
+    title: "26. Coconut Water",
+    subtitle: "",
+    description: "",
+    price: "$6.50",
+    image: p26,
+  },
+  {
+    url: "#_",
+    title: "27. Lemon Soda",
+    subtitle: "",
+    description: "",
+    price: "$6.50",
+    image: p27,
+  },
+  {
+    url: "#_",
+    title: "28. Iced Vietnamese Coffee",
+    subtitle: "",
+    description: "",
+    price: "$6.95",
+    image: p28,
+  },
+  {
+    url: "#_",
+    title: "29. Golden Peach",
+    subtitle: "",
+    description:
+      "Peach infused tea, orange slices, peach, peach jelly, and boba.",
+    price: "$7.00",
+    image: p29,
+  },
+  {
+    url: "#_",
+    title: "30. Strawberry Star",
+    subtitle: "",
+    description: "Strawberry infused tea, strawberry heart jelly.",
+    price: "$7.00",
+    image: p30,
+  },
+  {
+    url: "#_",
+    title: "31. Lychee Delight",
+    subtitle: "",
+    description: "Mint leaves, lychee jasmine tea, lychee, lychee jelly.",
+    price: "$7.00",
+    image: p31,
+  },
+];
 ---
 
 <section class="pt-4">
@@ -503,6 +561,50 @@ const saladProducts = [
   >
     {
       appetizersProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Drinks
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      drinksProducts.map((product) => (
         <figure class="relative bg-orange-10 rounded-t-3xl">
           <a href={product.url} aria-hidden="true" class="absolute inset-0" />
           <Image
