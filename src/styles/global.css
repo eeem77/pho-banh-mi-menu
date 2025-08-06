@@ -80,3 +80,85 @@
   background-color: #EDBC4F;
   transform: scale(1.1);
 }
+
+/* Estilos Generales del Nav */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #405A2C;
+  color: #F5E0C1;
+  padding: 1rem 1.5rem;
+}
+
+/* Enlaces de Navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+
+.nav-links li a {
+  color: #F5E0C1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s ease-in-out;
+  border-radius: 15px;
+}
+
+.nav-links li a:hover {
+  background-color: #F5E0C1;
+  color:#405A2C;
+  border-radius: 15px;
+}
+
+/* Botón de Hamburguesa */
+.hamburger {
+  display: none;
+  /* Oculto en escritorio */
+  cursor: pointer;
+}
+
+.bar {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* Media Query para Móviles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    /* Ajusta según el tamaño de tu navbar */
+    left: 0;
+    width: 100%;
+    background-color: #243319;
+    transition: transform 0.3s ease-in;
+    transform: translateY(-100%);
+    /* Oculto por defecto */
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    top: 60px;
+    /* Se muestra cuando está activo */
+  }
+
+  .hamburger {
+    display: block;
+    /* Visible en móvil */
+  }
+}

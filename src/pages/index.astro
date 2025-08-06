@@ -3,10 +3,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/landing/Hero.astro";
 import Products from "../components/landing/Products.astro";
 import ScrollToTop from "@/components/landing/ScrollToTop.astro";
+import Nav from "@/components/landing/Nav.astro";
 ---
 
 <BaseLayout>
+  <Nav />
   <Hero />
   <Products />
   <ScrollToTop />
 </BaseLayout>
+

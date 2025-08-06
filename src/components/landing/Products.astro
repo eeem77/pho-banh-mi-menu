@@ -416,387 +416,370 @@ const drinksProducts = [
 ];
 ---
 
-<nav class="pt-7">
-  <ul class="flex items-center justify-between text-xl text-amber-100">
-    <li class="hover:text-orange-1000"><a href="#pho">Phở</a></li>
-    <li class="hover:text-orange-1000">
-      <a href="#spring-rolls">Spring Rolls</a>
-    </li>
-    <li class="hover:text-orange-1000"><a href="#banh-mi">Banh Mi</a></li>
-    <li class="hover:text-orange-1000"><a href="#appetizers">Appetizers</a></li>
-    <li class="hover:text-orange-1000"><a href="#drinks">Drinks</a></li>
-    <li class="hover:text-orange-1000">
-      <a href="#rice-platter">Rice Platter</a>
-    </li>
-    <li class="hover:text-orange-1000"><a href="#vermicelli">Vermicelli</a></li>
-    <li class="hover:text-orange-1000"><a href="#salad">Salad</a></li>
-  </ul>
-
-  <section class="pt-4">
-    <div id="pho" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Phở
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="pho" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        phoProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Phở
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      phoProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="spring-rolls" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Spring Rolls
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="spring-rolls" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        springRollsProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Spring Rolls
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      springRollsProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="banh-mi" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Banh Mi
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="banh-mi" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        banhMiProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Banh Mi
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      banhMiProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="appetizers" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Appetizers
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="appetizers" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        appetizersProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Appetizers
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      appetizersProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="drinks" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Drinks
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="drinks" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        drinksProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Drinks
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      drinksProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="rice-platter" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Rice Platter
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="rice-platter" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        ricePlatterProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Rice Platter
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      ricePlatterProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="vermicelli" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Vermicelli
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="vermicelli" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        vermicelliProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Vermicelli
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      vermicelliProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <section class="pt-4">
-    <div id="salad" class="flex justify-center flex-wrap gap-3 pt-4">
-      <h1
-        class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
-      >
-        Salad
-      </h1>
-    </div>
-    <div
-      class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+<section class="pt-4">
+  <div id="salad" class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-1000 duration-300 w-fit"
     >
-      {
-        saladProducts.map((product) => (
-          <figure class="relative bg-orange-10 rounded-t-3xl">
-            <a href={product.url} aria-hidden="true" class="absolute inset-0" />
-            <Image
-              width="800"
-              height="800"
-              alt={product.title}
-              src={product.image}
-              class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
-            />
-            <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
-              <div>
-                <p class="mt-1 text-sm font-bold text-base-1000">
-                  {product.title}
-                </p>
-                <h3 class="mt-1 text-xs font-medium text-black">
-                  {product.subtitle}
-                </h3>
-                <p class="mt-1 text-xs text-black font-light">
-                  {product.description}
-                </p>
-              </div>
-              <p class="text-base text-base-1000 font-extrabold">
-                {product.price}
+      Salad
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      saladProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
               </p>
             </div>
-          </figure>
-        ))
-      }
-    </div>
-  </section>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: "smooth",
-          });
-        }
-      });
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth",
+        });
+      }
     });
-  </script>
-</nav>
+  });
+</script>

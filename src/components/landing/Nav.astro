@@ -1,0 +1,26 @@
+<nav class="navbar">
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#pho">Phở</a></li>
+    <li><a href="#spring-rolls">Spring Rolls</a></li>
+    <li><a href="#banh-mi">Banh Mi</a></li>
+    <li><a href="#appetizers">Appetizers</a></li>
+    <li><a href="#drinks">Drinks</a></li>
+    <li><a href="#rice-platter">Rice Platter</a></li>
+    <li><a href="#vermicelli">Vermicelli</a></li>
+    <li><a href="#salad">Salad</a></li>
+  </ul>
+</nav>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navLinks.classList.toggle("active");
+  });
+</script>
