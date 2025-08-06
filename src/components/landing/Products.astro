@@ -6,10 +6,10 @@ import p3 from "@/images/chicken-pho.webp";
 import p4 from "@/images/vegan-pho.webp";
 import p5 from "@/images/seafood-pho.webp";
 import p6 from "@/images/wonton-egg-noodle.webp";
-import p7 from "@/images/traditional-spring-rolls.webp";
-import p8 from "@/images/lemon-grass-beef-banh-mì.webp";
-import p9 from "@/images/vegetarian.webp";
-import p10 from "@/images/spicy-beef-noodle-pho.webp";
+import p7 from "@/images/spicy-beef-noodle-pho.webp";
+import p8 from "@/images/traditional-spring-rolls.webp";
+import p9 from "@/images/lemon-grass-beef-banh-mì.webp";
+import p10 from "@/images/vegetarian.webp";
 import p11 from "@/images/grilled-chicken-banh-mi.webp";
 import p12 from "@/images/grilled-pork-banh-mi.webp";
 import p13 from "@/images/lemongrass-beef-banh-mi.webp";
@@ -25,14 +25,16 @@ import p22 from "@/images/crispy-wontons.webp";
 import p23 from "@/images/honey-garlic-wings.webp";
 import p24 from "@/images/popcorn-chicken.webp";
 import p25 from "@/images/vegetarian-eggrolls.webp";
-import p31 from "@/images/grilled-pork-chop-rice-plate.webp";
-import p32 from "@/images/grilled-chicken-rice-plate.webp";
-import p33 from "@/images/grilled-pork-rice-plate.webp";
-import p34 from "@/images/vegetarian-rice-plate.webp";
-import p35 from "@/images/braised-ginger-chicken-rice-plate.webp";
-import p36 from "@/images/special-vermicelli-bowl.webp";
-import p37 from "@/images/regular-vermicelli-bowl.webp";
-import p38 from "@/images/vegetarian-vermicelli-bowl.webp";
+import p32 from "@/images/grilled-pork-chop-rice-plate.webp";
+import p33 from "@/images/grilled-chicken-rice-plate.webp";
+import p34 from "@/images/grilled-pork-rice-plate.webp";
+import p35 from "@/images/vegetarian-rice-plate.webp";
+import p36 from "@/images/braised-ginger-chicken-rice-plate.webp";
+import p37 from "@/images/special-vermicelli-bowl.webp";
+import p38 from "@/images/regular-vermicelli-bowl.webp";
+import p39 from "@/images/vegetarian-vermicelli-bowl.webp";
+import p40 from "@/images/asian-chicken-salad.webp";
+import p41 from "@/images/papaya-shrimp-salad.webp";
 
 const phoProducts = [
   {
@@ -95,42 +97,42 @@ const phoProducts = [
     description:
       "Pork, beef bones, with added flavors of lemon grass, annatto and shrimp paste.",
     price: "",
-    image: p10,
+    image: p7,
   },
 ];
 
 const springRollsProducts = [
   {
     url: "#_",
-    title: "7. Traditional Spring Rolls",
+    title: "8. Traditional Spring Rolls",
     subtitle: "( 6 pc )",
     description:
       "Rice paper, lettuce salad, avocado, boiled shrimp with special dipping sauce.",
-    price: "$13.00",
-    image: p7,
-  },
-  {
-    url: "#_",
-    title: "8. Lemongrass Beef",
-    subtitle: "( 6 pc )",
-    description: "Rice paper, lettuce salad, lemongrass beef.",
     price: "$13.00",
     image: p8,
   },
   {
     url: "#_",
-    title: "9. Vegetarian",
+    title: "9. Lemongrass Beef",
+    subtitle: "( 6 pc )",
+    description: "Rice paper, lettuce salad, lemongrass beef.",
+    price: "$13.00",
+    image: p9,
+  },
+  {
+    url: "#_",
+    title: "10. Vegetarian",
     subtitle: "( 6 pc )",
     description: "Rice paper, lettuce salad, lemongrass marinated tofu.",
     price: "$13.00",
-    image: p9,
+    image: p10,
   },
 ];
 
 const banhMiProducts = [
   {
     url: "#_",
-    title: "10. Grilled Chicken Bánh Mì",
+    title: "11. Grilled Chicken Bánh Mì",
     subtitle: "[ Gà Nướng ]",
     description:
       "Grilled chicken in special sauce, signature vietnamese pickle salad.",
@@ -139,7 +141,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "11. Grilled Pork Bánh Mì",
+    title: "12. Grilled Pork Bánh Mì",
     subtitle: "[ Heo Nướng ]",
     description:
       "Grilled pork in special sauce, signature vietnamese pickle salad.",
@@ -148,7 +150,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "12. Lemongrass Beef Bánh Mì",
+    title: "13. Lemongrass Beef Bánh Mì",
     subtitle: "[ Bánh Mì Bò Ướp Xả ]",
     description:
       "Saute lemongrass marinated beef, signature vietnamese pickle salad.",
@@ -157,7 +159,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "13. Pork Belly Bánh Mì",
+    title: "14. Pork Belly Bánh Mì",
     subtitle: "[ Bánh Mì Thit Ba Chì Ram ]",
     description: "Grill pork belly, signature vietnamese pickle salad.",
     price: "$14.95",
@@ -165,7 +167,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "14. Vegetarian Bánh Mì",
+    title: "15. Vegetarian Bánh Mì",
     subtitle: "[ Bánh Mì Chay ]",
     description:
       "Lemongrass marinated tofu, signature vietnamese pickle salad.",
@@ -174,7 +176,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "15. Pate, Pork Roll",
+    title: "16. Pate, Pork Roll",
     subtitle: "[ Bánh Mì Pate Chả Chà Bông ]",
     description: "Pate, pork roll, dried shredded pork.",
     price: "$12.00",
@@ -182,7 +184,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "16. Fish Cake Bánh Mì",
+    title: "17. Fish Cake Bánh Mì",
     subtitle: "[ Bánh Mì Chả Cá ]",
     description: "Fish cake slices.",
     price: "$14.00",
@@ -190,7 +192,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "17. Combination Bánh Mì",
+    title: "18. Combination Bánh Mì",
     subtitle: "[ Bánh Mì Thịt Nướng ]",
     description: "Pate, fried egg, choice of meat: pork, chicken, beef.",
     price: "$13.00",
@@ -198,7 +200,7 @@ const banhMiProducts = [
   },
   {
     url: "#_",
-    title: "18. Special Combo",
+    title: "19. Special Combo",
     subtitle: "[ Bánh Mì Đặc Biệt ]",
     description:
       "Any banh mi. Choice of meat: pork, chicken, beef. Fries and soda or coffee (extra $1).",
@@ -210,7 +212,7 @@ const banhMiProducts = [
 const appetizersProducts = [
   {
     url: "#_",
-    title: "19. Fries",
+    title: "20. Fries",
     subtitle: "",
     description: "",
     price: "$9.00",
@@ -218,7 +220,7 @@ const appetizersProducts = [
   },
   {
     url: "#_",
-    title: "20. Eggrolls",
+    title: "21. Eggrolls",
     subtitle: "",
     description: "",
     price: "$9.00",
@@ -226,7 +228,7 @@ const appetizersProducts = [
   },
   {
     url: "#_",
-    title: "21. Crispy Wontons",
+    title: "22. Crispy Wontons",
     subtitle: "",
     description: "",
     price: "$9.00",
@@ -234,7 +236,7 @@ const appetizersProducts = [
   },
   {
     url: "#_",
-    title: "22. Honey Garlic Wings",
+    title: "23. Honey Garlic Wings",
     subtitle: "(5 pc)",
     description: "",
     price: "$10.00",
@@ -242,7 +244,7 @@ const appetizersProducts = [
   },
   {
     url: "#_",
-    title: "23. Popcorn Chicken",
+    title: "24. Popcorn Chicken",
     subtitle: "",
     description: "",
     price: "$9.00",
@@ -250,7 +252,7 @@ const appetizersProducts = [
   },
   {
     url: "#_",
-    title: "24. Vegetarian Eggrolls",
+    title: "25. Vegetarian Eggrolls",
     subtitle: "",
     description: "",
     price: "$9.00",
@@ -261,76 +263,97 @@ const appetizersProducts = [
 const ricePlatterProducts = [
   {
     url: "#_",
-    title: "31. Grilled Pork Chop Rice Plate",
+    title: "32. Grilled Pork Chop Rice Plate",
     subtitle: "[ Cơm Sườn Nướng ]",
     description:
       "Vietnamese rice with grilled pork chop in sweet & sour marination, fried eggs, Chinese sausage and fresh vegetables or signature vietnamese pickle salad.",
     price: "$23.00",
-    image: p31,
-  },
-  {
-    url: "#_",
-    title: "32. Grilled Chicken Rice Plate",
-    subtitle: "[ Com Gà Nướng ]",
-    description:
-      "Vietnamese rice with grilled chicken in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
-    price: "$18.00",
     image: p32,
   },
   {
     url: "#_",
-    title: "33. Grilled Pork Rice Plate",
-    subtitle: "[ Com Heo Nướng ]",
+    title: "33. Grilled Chicken Rice Plate",
+    subtitle: "[ Com Gà Nướng ]",
     description:
-      "Vietnamese rice with grilled pork in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
+      "Vietnamese rice with grilled chicken in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
     price: "$18.00",
     image: p33,
   },
   {
     url: "#_",
-    title: "34. Vegetarian Rice Plate",
-    subtitle: "[ Cơm Đậu Hũ Xào Chay ]",
+    title: "34. Grilled Pork Rice Plate",
+    subtitle: "[ Com Heo Nướng ]",
     description:
-      "Vietnamese rice with stir-fried tofu with broccoli, cabbage, and carrot.",
+      "Vietnamese rice with grilled pork in sweet & sour marination, fresh/boiled vegetable and or signature vietnamese pickle salad.",
     price: "$18.00",
     image: p34,
   },
   {
     url: "#_",
-    title: "35. Braised Ginger Chicken Rice Plate",
+    title: "35. Vegetarian Rice Plate",
+    subtitle: "[ Cơm Đậu Hũ Xào Chay ]",
+    description:
+      "Vietnamese rice with stir-fried tofu with broccoli, cabbage, and carrot.",
+    price: "$18.00",
+    image: p35,
+  },
+  {
+    url: "#_",
+    title: "36. Braised Ginger Chicken Rice Plate",
     subtitle: "[ Gà Ram Gừng ]",
     description:
       "Vietnamese rice with caramelized ginger chicken, fresh/boiled vegetable and or signature vietnamese pickle salad.",
     price: "$18.00",
-    image: p35,
+    image: p36,
   },
 ];
 
 const vermicelliProducts = [
   {
     url: "#_",
-    title: "36. Special Vermicelli Bowl",
+    title: "37. Special Vermicelli Bowl",
     subtitle: "[ Bún Tôm Thịt Nướng Chả Giò ]",
     description:
       "Fried eggrolls, shrimp, and choice of meat beef, chicken or pork with vegetables.",
     price: "$20.00",
-    image: p36,
-  },
-  {
-    url: "#_",
-    title: "37. Regular Vermicelli Bowl",
-    subtitle: "[ Bún Thịt Nướng ]",
-    description: "Choice of meat beef, chicken or pork with vegetables.",
-    price: "$19.00",
     image: p37,
   },
   {
     url: "#_",
-    title: "38. Vegetarian Vermicelli Bowl",
+    title: "38. Regular Vermicelli Bowl",
+    subtitle: "[ Bún Thịt Nướng ]",
+    description: "Choice of meat beef, chicken or pork with vegetables.",
+    price: "$19.00",
+    image: p38,
+  },
+  {
+    url: "#_",
+    title: "39. Vegetarian Vermicelli Bowl",
     subtitle: "[ Bún Chay ]",
     description: "Lemongrass marinated tofu with vegetables.",
     price: "$18.00",
-    image: p38,
+    image: p39,
+  },
+];
+
+const saladProducts = [
+  {
+    url: "#_",
+    title: "40. Asian Chicken Salad",
+    subtitle: "",
+    description:
+      "Grilled chicken, romaine lettuce, shredded carrot, walnut, crispy wonton with house soy ginger dressing.",
+    price: "$15.00",
+    image: p40,
+  },
+  {
+    url: "#_",
+    title: "41. Papaya Shrimp Salad",
+    subtitle: "",
+    description:
+      "Shredded green papaya, mango, basil, shrimp spicy vinaigrette.",
+    price: "$15.00",
+    image: p41,
   },
 ];
 ---
@@ -568,6 +591,50 @@ const vermicelliProducts = [
   >
     {
       vermicelliProducts.map((product) => (
+        <figure class="relative bg-orange-10 rounded-t-3xl">
+          <a href={product.url} aria-hidden="true" class="absolute inset-0" />
+          <Image
+            width="800"
+            height="800"
+            alt={product.title}
+            src={product.image}
+            class="w-full rounded-t-3xl shadow aspect-12/9 object-cover object-center"
+          />
+          <div class="mt-2 flex justify-between px-6 bg-orange-10 pb-3">
+            <div>
+              <p class="mt-1 text-sm font-bold text-base-1000">
+                {product.title}
+              </p>
+              <h3 class="mt-1 text-xs font-medium text-black">
+                {product.subtitle}
+              </h3>
+              <p class="mt-1 text-xs text-black font-light">
+                {product.description}
+              </p>
+            </div>
+            <p class="text-base text-base-1000 font-extrabold">
+              {product.price}
+            </p>
+          </div>
+        </figure>
+      ))
+    }
+  </div>
+</section>
+
+<section class="pt-4">
+  <div class="flex justify-center flex-wrap gap-3 pt-4">
+    <h1
+      class="px-4.5 font-extrabold h-9 text-2xl bg-orange-10 text-base-1000 rounded-full flex items-center justify-center hover:bg-orange-600 duration-300 w-fit"
+    >
+      Salad
+    </h1>
+  </div>
+  <div
+    class="grid grid-cols-1 gap-6 lg:gap-y-24 md:grid-cols-2 lg:grid-cols-3 py-12"
+  >
+    {
+      saladProducts.map((product) => (
         <figure class="relative bg-orange-10 rounded-t-3xl">
           <a href={product.url} aria-hidden="true" class="absolute inset-0" />
           <Image
