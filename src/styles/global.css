@@ -55,3 +55,28 @@
   display: flex;
   justify-content: center;
 }
+
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #F5E0C1;
+  color: #405A2C;
+  cursor: pointer;
+  padding: 13px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #EDBC4F;
+  transform: scale(1.1);
+}
