@@ -1,8 +1,9 @@
 @import "tailwindcss";
+
 @theme {
 
   /* base  */
- --color-base-50: oklch(97.3% 0.005 145.13);
+  --color-base-50: oklch(97.3% 0.005 145.13);
   --color-base-100: oklch(93.86% 0.013 141.67);
   --color-base-200: oklch(88.55% 0.021 140.81);
   --color-base-300: oklch(82.47% 0.02 140.41);
@@ -32,26 +33,45 @@
 
 
 }
+
 /* CSS */
 :root {
   /* Typography */
   font-feature-settings: "liga" 1, "calt" 1,
-    /* Contextual Alternates */ "dlig" 1, /* Discretionary Ligatures */ "ss07" 1,
-    /* fSquare punctuation */ "ss08" 1, /* Square quotes */ "zero" 1,
-    /* Slashed zero */ "tnum" 1, /* Tabular numbers */ "cv03" 1,
-    /* Open six */ "cv04" 1, /* Open nine */ "cv01" 1,
-    /* Alternate one */ "cv09", /* Flat-top three */ "cv02" 1; /* Open 4 */
+    /* Contextual Alternates */
+    "dlig" 1,
+    /* Discretionary Ligatures */
+    "ss07" 1,
+    /* fSquare punctuation */
+    "ss08" 1,
+    /* Square quotes */
+    "zero" 1,
+    /* Slashed zero */
+    "tnum" 1,
+    /* Tabular numbers */
+    "cv03" 1,
+    /* Open six */
+    "cv04" 1,
+    /* Open nine */
+    "cv01" 1,
+    /* Alternate one */
+    "cv09",
+    /* Flat-top three */
+    "cv02" 1;
+  /* Open 4 */
   font-family: Inter, sans-serif;
   font-variant-numeric: tabular-nums;
 }
+
 @supports (font-variation-settings: normal) {
+
   /* Use variable font if supported */
   :root {
     font-family: InterVariable, sans-serif;
   }
 }
 
-.img-logo{
+.img-logo {
   display: flex;
   justify-content: center;
 }
@@ -65,7 +85,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #F5E0C1;
+  background-color: #EDBC4F;
   color: #405A2C;
   cursor: pointer;
   padding: 13px;
@@ -102,20 +122,19 @@
   color: #F5E0C1;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 15px;
 }
 
 .nav-links li a:hover {
-  background-color: #F5E0C1;
-  color:#405A2C;
+  /* background-color: #F5E0C1; */
+  background-color: #F1BE5B;
+  color: #405A2C;
   border-radius: 15px;
 }
 
-/* Botón de Hamburguesa */
 .hamburger {
   display: none;
-  /* Oculto en escritorio */
   cursor: pointer;
 }
 
@@ -128,7 +147,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #F5E0C1;
 }
 
 /* Media Query para Móviles */
@@ -136,13 +155,13 @@
   .nav-links {
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 60px;
     /* Ajusta según el tamaño de tu navbar */
     left: 0;
     width: 100%;
-    background-color: #2d3f1f;
+    background-color: #F1BE5B;
     transition: transform 0.3s ease-in;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
     /* Oculto por defecto */
   }
 
@@ -151,14 +170,32 @@
     padding: 1rem 0;
   }
 
+  .nav-links li a {
+    color: #405A2C;
+  }
+
   .nav-links.active {
-    transform: translateY(0);
-    top: 60px;
+    transform: translateX(0);
+    /* top: 60px; */
     /* Se muestra cuando está activo */
   }
 
   .hamburger {
     display: block;
     /* Visible en móvil */
+  }
+
+  .hamburger.active .bar {
+    background-color: transparent;
+  }
+
+  .hamburger.active .bar:first-child {
+    background-color: #F5E0C1;
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+  .hamburger.active .bar:last-child {
+    background-color: #F5E0C1;
+    transform: translateY(-8px) rotate(45deg);
   }
 }
