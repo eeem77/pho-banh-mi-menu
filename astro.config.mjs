@@ -7,6 +7,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   // Add your domain here
-   site: 'https://lexingtonthemes.com',
-  integrations: [ sitemap()]
+  site: "https://phobanhmi.scanme4menu.com/",
+  integrations: [sitemap()],
 });
