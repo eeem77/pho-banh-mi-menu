@@ -7,6 +7,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   // Add your domain here
-  site: "https://phobanhmi.scanme4menu.com/",
+  site: "https://scanme4menu.com/phobanhmi",
   integrations: [sitemap()],
 });
